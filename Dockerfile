@@ -22,7 +22,7 @@ RUN make compute_flows
 
 CMD \
   if [ "$HEADER_COPY_DIRECTORY" ]; then \
-    cp /my-projects/compute_flows/default/master.h ${HEADER_COPY_DIRECTORY}/master.h; \
+    cp /my-projects/analysis/default/master.h ${HEADER_COPY_DIRECTORY}/master.h; \
   else \
     ./compute_flows $VAR;\
   fi
