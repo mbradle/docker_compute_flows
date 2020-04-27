@@ -16,7 +16,7 @@ RUN git clone https://mbradle@bitbucket.org/mbradle/analysis.git
 
 WORKDIR /my-projects/analysis
 
-COPY Dockerfile master.[h] /my-projects/analysis
+COPY Dockerfile master.[h] /my-projects/analysis/
 
 RUN make compute_flows
 
